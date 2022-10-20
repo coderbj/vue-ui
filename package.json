@@ -1,12 +1,21 @@
 {
   "name": "vue-ui",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "private": false,
+  "version": "0.0.1",
+  "main": "dist/vue-ui.umd.js",
+  "module": "dist/vue-ui.mjs",
+  "exports": {
+    ".": {
+      "import": "dist/vue-ui.mjs",
+      "require": "dist/vue-ui.umd.js"
+    }
+  },
+  "files": ["dist/*"],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:css": "npx gulp sass"
   },
   "dependencies": {
     "vue": "^3.2.37"
@@ -14,6 +23,9 @@
   "devDependencies": {
     "@types/node": "^18.11.2",
     "@vitejs/plugin-vue": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.55.0",
     "typescript": "^4.6.4",
     "unplugin-vue-define-options": "^0.12.0",
