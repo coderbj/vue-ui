@@ -1,8 +1,6 @@
-import gulp from 'gulp'
-import dartSass from 'sass';
-import gulpSass from 'gulp-sass';
-const sass = gulpSass(dartSass);
-import minifyCSS from 'gulp-minify-css'
+const gulp = require('gulp')
+const sass = require ( 'gulp-sass' ) ( require ( 'sass' ) )
+const minifyCSS = require('gulp-minify-css')
 gulp.task('sass',async function() {
   return gulp.src('components/css/**/*.scss')
     .pipe(sass())

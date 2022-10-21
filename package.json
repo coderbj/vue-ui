@@ -1,20 +1,27 @@
 {
-  "name": "vue-ui",
+  "name": "texture-ui",
   "private": false,
-  "version": "0.0.1",
-  "main": "dist/vue-ui.umd.js",
-  "module": "dist/vue-ui.mjs",
+  "description": "Vue3 UI",
+  "keywords": [
+    ""
+  ],
+  "author": "coderbj",
+  "version": "0.0.10",
+  "main": "dist/texture-ui.umd.js",
   "exports": {
     ".": {
-      "import": "dist/vue-ui.mjs",
-      "require": "dist/vue-ui.umd.js"
+      "import": "dist/texture-ui.mjs",
+      "require": "dist/texture-ui.umd.js"
     }
   },
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build && npx gulp sass",
     "preview": "vite preview",
+    "build:js": "vue-tsc --noEmit && vite build",
     "build:css": "npx gulp sass"
   },
   "dependencies": {

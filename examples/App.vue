@@ -1,10 +1,10 @@
 <template>
   <b-card
-    imgSrc="card01.png"
+    imgSrc="http://web.upcedu.xin:8080/lbj/ui/card01.png"
     summary="Next.js+React+Node系统实战，搞定SSR服务器渲染"
   />
   <b-card
-    imgSrc="card02.png"
+    imgSrc="http://web.upcedu.xin:8080/lbj/ui/card02.png"
     summary="从实习生到总监 程序员高薪进阶指南"
     :width="367"
     :imgHeight="138"
@@ -17,7 +17,7 @@
     </template>
   </b-card>
   <b-card
-    imgSrc="card03.png"
+    imgSrc="http://web.upcedu.xin:8080/lbj/ui/card03.png"
     :width="367"
     :imgHeight="90"
 

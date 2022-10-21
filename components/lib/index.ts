@@ -11,12 +11,12 @@ const install = function (app:any) {
     app.use(i)
   })
 }
-const bui = {
+const tui = {
   install
 }
 
 // 为了支持按需导入
 export {Card}
 // 为了全部导入
-export default bui
+export default tui
 

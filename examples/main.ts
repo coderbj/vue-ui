@@ -3,7 +3,7 @@ import './style.css'
 import App from './App.vue'
 const app = createApp(App)
 import '../components/css/index.scss'
-import bui from "../components/lib"
-app.use(bui)
+import tui from "../components/lib"
+app.use(tui)
 
 app.mount('#app')
