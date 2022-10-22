@@ -28,6 +28,7 @@ export default defineConfig({
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
     alias: {
       "@": resolve(__dirname, "src"),
+      //"texture-ui":resolve(__dirname,"node_modules/texture-ui")
     },
   },
 
