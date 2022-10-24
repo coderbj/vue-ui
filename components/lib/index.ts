@@ -1,12 +1,13 @@
+import type {App} from 'vue'
 // 导入组件
 import Card from "./card"
 
 // 保存所有组件
-const components = [
+const components:any[] = [
   Card,
 ]
 
-const install = function (app:any) {
+const install = function (app:App) {
   components.forEach(i => {
     app.use(i)
   })

@@ -6,12 +6,20 @@
     ""
   ],
   "author": "coderbj",
-  "version": "0.0.12",
+  "version": "0.0.22",
   "main": "dist/texture-ui.umd.js",
   "exports": {
     ".": {
       "import": "dist/texture-ui.mjs",
       "require": "dist/texture-ui.umd.js"
+    },
+    "./dist/css/index.css": {
+      "import": "dist/css/index.css",
+      "require": "dist/css/index.css"
+    },
+    "./dist/css/*": {
+      "import": "dist/css/*",
+      "require": "dist/css/*"
     }
   },
   "files": [
